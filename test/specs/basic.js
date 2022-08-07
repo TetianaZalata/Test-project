@@ -27,15 +27,9 @@ describe('webdriver.io page', () => {
      let input2 = await $('#search_input_react')
      await input2.setValue('test is ')
      await browser.pause(5000);
-     await input2.addValue('DONE!')
-     await browser.pause(5000);
 
      value = await input2.getValue()
      assert(value==='test is DONE!') // true
-    
-
-
-
 
     })
     
