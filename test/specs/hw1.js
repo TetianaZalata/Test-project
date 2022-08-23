@@ -8,6 +8,8 @@ const webdriverDocsTitle = 'API Docs · WebdriverIO'
 
 const APIButtonTag = 'li a[href="/docs/api.html"]'
 const searchInputTag = '#search_input_react'
+const JSONWireTag = '//*[text()="JSONWire protocol"]'
+
 
 
 describe('HOME WORK1 webdriver.io page', () => {
@@ -39,7 +41,7 @@ describe('HOME WORK1 webdriver.io page', () => {
         console.log('Text for element:' + await API.getText());
     })
     it('hometask1-6 JSONWire has attr href', async () => {
-        const input = await $('//*[text()="JSONWire protocol"]');
+        const input = await $(JSONWireTag);
         let attr = await input.getAttribute('href')
         console.log("Href attribute is:" + await attr);
     })
