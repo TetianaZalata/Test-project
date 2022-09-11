@@ -10,7 +10,7 @@ const TwitterelemTag = '[src="https://github.githubassets.com/images/modules/sit
 const ContactSalesTag = '[class="btn-mktg btn-subtle-mktg"]'
 const ProductElemTag =  `//summary[contains(text(),'Product')]`
 
-    describe('webdriver.io page', () => {
+    describe('HOME WORK3 GitHub page', () => {
     
         it('hometask3-1 Verify ability of user  to sign in to GitHub with not valid credentials (Empty fields)', async () => {
             await browser.url(loginUrl);
